@@ -11,6 +11,7 @@ public class EighthExampleCafe {
     double product3Price = 8.99;
     double subtotal;
     final double SALES_TAX = 0.08875;
+    double totalSale;
 
     //Method to print the cafe order's details
     public void printCafeOrder() {
@@ -19,7 +20,7 @@ public class EighthExampleCafe {
                 " from the Krunchkin Cafe.");
 
         subtotal = 3 * product1Price + 4 * product2Price + 2 * product3Price;
-        double totalSale = subtotal + subtotal * SALES_TAX;
+        totalSale = subtotal + subtotal * SALES_TAX;
 
         System.out.printf("Her subtotal is $%.2f, and so the total is $%.2f including 8.8875%% sales tax."
                 , subtotal, totalSale);
